@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cloud Album Test">
+  <test verbose="2" name="cloud album basic test">
+  	<parameter name="account" value="zero43one@163.com"/> <!-- input your account -->
+  	<parameter name="password" value="zxf850403"/> <!-- input your password -->
+    <classes>
+      <class name="cloudAlbumTest.verifyDownload"/>
+      <class name="cloudAlbumTest.verifyComment"/>
+      <class name="cloudAlbumTest.verifyNonameAlert"/>
+      <class name="cloudAlbumTest.verifySelfDefineSort"/>
+      <class name="cloudAlbumTest.verifyDeleteAlbum"/>
+    </classes>
+  </test> 
+</suite>
